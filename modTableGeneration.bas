@@ -2,6 +2,7 @@ Attribute VB_Name = "modTableGeneration"
 Option Compare Database
 
 Public Sub GenerateTables()
+On Error GoTo Err_Handler:
 
     Dim fld As Field, fldName As String, tblName As String, lastTblName As String, tdf As DAO.TableDef, fldType As Variant, AutoIncr As Boolean, rq As Boolean
     Dim fldDesc As String, pkFlag As Boolean, fkFlag As Boolean, idxFlag As Boolean, flg As Boolean
