@@ -1,6 +1,13 @@
 Attribute VB_Name = "modTableGeneration"
 Option Compare Database
 
+'****************************************************************************************************
+'   RC Table Generation - v0.1                                                                      *
+'   Generates tables in the current DB as laid out in tblTABLE_SCHEMA                               *
+'                                                                                                   *
+'   Published 4/10/2014         Author : Bill Normandin                                             *
+'****************************************************************************************************
+
 Public Sub GenerateTables()
 On Error GoTo Err_Handler:
 
