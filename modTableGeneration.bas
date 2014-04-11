@@ -1,22 +1,22 @@
 Attribute VB_Name = "modTableGeneration"
 Option Compare Database
 
-'****************************************************************************************************
-'   RC Table Generation - v0.1                                                                      *
-'   Generates tables in the current DB as laid out in tblTABLE_SCHEMA                               *
-'   Fields :                                                                                        *
-'               [TABLE_NAME]                                                                        *
-'               [FIELD_NAME]                                                                        *
-'               [FIELD_TYPE]                                                                        *
-'               [FIELD_DESC]                                                                        *
-'               [PRIMARY_KEY]                                                                       *
-'               [FOREIGN_KEY]                                                                       *
-'               [INDEXED]                                                                           *
-'               [REQUIRED]                                                                          *
-'                                                                                                   *
-'   Published 4/10/2014         Author : Bill Normandin                                             *
-'   Language : Visual Basic for Applications                                                        *
-'****************************************************************************************************
+'********************************************************************************************************
+'   RC Table Generation - v0.1                                                                          *
+'   Generates tables in the current DB as laid out in tblTABLE_SCHEMA                                   *
+'   Fields :                                                                                            *
+'               [TABLE_NAME]                                                                            *
+'               [FIELD_NAME]                                                                            *
+'               [FIELD_TYPE] "INTEGER", "STRING", "DECIMAL", "DATE", "YES/NO", "CURRENCY", "PERCENT"    *
+'               [FIELD_DESC]                                                                            *
+'               [PRIMARY_KEY]                                                                           *
+'               [FOREIGN_KEY]                                                                           *
+'               [INDEXED]                                                                               *
+'               [REQUIRED]                                                                              *
+'                                                                                                       *
+'   Published 4/10/2014         Author : Bill Normandin                                                 *
+'   Language : Visual Basic for Applications                                                            *
+'********************************************************************************************************
 
 Public Sub GenerateTables()
 On Error GoTo Err_Handler:
